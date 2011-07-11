@@ -1,0 +1,17 @@
+# Build system
+aclocal.m4
+autom4te.cache/
+configure
+compile
+install-sh
+missing
+INSTALL
+config.h.in
+Makefile.in
+# Built files
+Makefile
+config.h
+config.log
+config.status
+stamp-h1
+
