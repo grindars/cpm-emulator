@@ -33,3 +33,5 @@ DISK_READ: EQU 0xFFEF
 .HANG: JP .HANG
 
 ERROR_MSG: DB "I/O Error\r\n", 0
+
+ds 512 - $
