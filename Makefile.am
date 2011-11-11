@@ -1,3 +1,4 @@
+SUBDIRS      = src rom
 EXTRA_DIST   = generate-gitfiles.sh
 
 dist-hook:

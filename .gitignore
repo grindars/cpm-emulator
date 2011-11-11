@@ -8,10 +8,17 @@ missing
 INSTALL
 config.h.in
 Makefile.in
+depcomp
+config.guess
+config.sub
 # Built files
 Makefile
 config.h
 config.log
 config.status
 stamp-h1
+/src/cpm-*.o
+/src/cpm
+/src/.deps/
+/rom/*.bin
 
