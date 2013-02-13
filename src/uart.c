@@ -57,7 +57,7 @@ static int fork_xterm(pid_t *pid, int *fd) {
     } else if(*pid == 0) {
         char ccn[PATH_MAX];
 
-        sprintf(ccn, "-S%s/%d", ttyname(slave), slave);
+        sprintf(ccn, "-S%s/%d", strrchr(ttyname(slave), '/') + 1, slave);
 
         char *const args[] = {
             "/usr/bin/xterm",

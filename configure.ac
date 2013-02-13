@@ -8,7 +8,11 @@ AC_CHECK_LIB([z80ex], [z80ex_get_version], [], [AC_MSG_ERROR([z80ex is required]
 
 #PKG_CHECK_MODULES([SDL], [sdl])
 
-AC_CHECK_TARGET_TOOL([Z80ASM], [z80asm], [AC_MSG_ERROR([z80asm is required])])
+AC_CHECK_TARGET_TOOL([Z80ASM], [z80asm])
+
+if test "x$Z80ASM" = "x"; then
+    AC_MSG_ERROR([z80asm is required])
+fi
 
 AC_CONFIG_HEADER([config.h])
 AC_CONFIG_FILES([Makefile src/Makefile rom/Makefile])
